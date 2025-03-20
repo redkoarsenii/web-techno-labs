@@ -58,12 +58,12 @@ checkGradeBtn.addEventListener('click', (e) => {
 })
 
 monthNameCheckBtn.addEventListener('click', (e) => {
-    const month = monthName.value;
+    const month = parseFloat(monthName.value);
 
     switch (month) {
-        case 'Грудень':
-        case 'Січень':
-        case 'Лютий':
+        case 12:
+        case 1:
+        case 2:
             alert("Зима")
             break;
         case "Березень":
@@ -81,17 +81,8 @@ monthNameCheckBtn.addEventListener('click', (e) => {
         case "Листопад":
             alert("Осінь")
             break;
+        default:
+            alert("такого місяця не існує");
+            break
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
