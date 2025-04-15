@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+<!-- Task 1-->
+<div class="lab5__main-container">
+    <h2>Task 1</h2>
+    <div>
+        <h3>1.1</h3>
+        <div class="task1__lamp-container">
+            <div id="task1Lamp" class="task1__lamp light-off"></div>
+            <div class="lamp-leg" ></div>
+        </div>
+        <button id="task1LampBtn">on/off</button>
+    </div>
+    <div>
+        <h2>1.2</h2>
+        <div class="task2__lamp-container">
+            <div class="task2__inner-container">
+                <div id="regularLamp" class="task2__regular-lamp light-off"></div>
+                <div class="lamp-leg"></div>
+            </div>
+            <div class="task2__inner-container">
+                <div id="efficientLamp" class="task2__efficient-lamp light-off"></div>
+                <div class="lamp-leg"></div>
+            </div>
+            <div class="task2__inner-container">
+                <div id="ledLamp" class="task2__led-lamp light-off"></div>
+                <div class="lamp-leg"></div>
+            </div>
+        </div>
+        <div id="task2BtnsContainer">
+            <input type="radio"  name="lamp" id="chooseRegularLamp">
+            <input type="radio"  name="lamp" id="chooseEfficientLamp">
+            <input type="radio"  name="lamp" id="chooseLedLamp">
+        </div>
+    </div>
+    <div>
+        <h2>1.3</h2>
+        <div class="task1__lamp-container">
+            <div id="lamp" class="task1__lamp light-off"></div>
+            <div class="lamp-leg"></div>
+        </div>
+
+        <label for="lampBrightness">Введіть яскравість (1–3):</label>
+        <input id="lampBrightness" type="number" min="1" max="3">
+
+        <button id="changeLampBrightness">Змінити яскравість</button>
+        <button id="toggleLamp">Увімкнути / Вимкнути</button>
+    </div>
+    <div>
+        <h2>1.4</h2>
+        <div id="task4Lamp" class="task4__lamp-container">
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <label for="productName">Назва продукту</label>
+    <input id="productName" type="text">
+
+    <label for="productPrice">Ціна продукту</label>
+    <input id="productPrice" type="text">
+
+    <label for="productQuantity">Кількість</label>
+    <input id="productQuantity" type="number">
+
+    <button id="addProductToCatalog">додати до каталогу</button>
+</div>
+
+<div>
+    <label for="productIdDelete">ID продукту для видалення</label>
+    <input id="productIdDelete" type="number">
+    <button onclick="deleteProduct()">Видалити продукт</button>
+</div>
+
+<div>
+    <label for="updateId">ID продукту для оновлення</label>
+    <input id="updateId" type="number">
+    <label for="newPrice">Нова ціна</label>
+    <input id="newPrice" type="number">
+    <label for="newQuantity">Нова кількість</label>
+    <input id="newQuantity" type="number">
+    <button onclick="updateProduct()">Оновити продукт</button>
+</div>
+
+<div>
+    <label for="searchName">Пошук за назвою</label>
+    <input id="searchName" type="text">
+    <button onclick="findProduct()">Знайти</button>
+</div>
+
+<div>
+    <label for="orderId">ID продукту для замовлення</label>
+    <input id="orderId" type="number">
+    <label for="orderQuantity">Кількість</label>
+    <input id="orderQuantity" type="number">
+    <button onclick="makeOrder()">Замовити</button>
+</div>
+
+<div>
+    <button id="displayCatalog">вивести список продуктів</button>
+    <ul id="catalogList"></ul>
+</div>
+
+</body>
+</html>

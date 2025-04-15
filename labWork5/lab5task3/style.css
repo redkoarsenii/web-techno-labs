@@ -1,0 +1,19 @@
+.wrapper{
+    width: 500px;
+    height: 300px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .timer-container{
+        .timer-content{
+            display: flex;
+            justify-content: center;
+        }
+        .btns-container{}
+    }
+
+}
